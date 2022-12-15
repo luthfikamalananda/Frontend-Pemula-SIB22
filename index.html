@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUTHFI KAMAL</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header id="navbar">
+        <div class="jumbotron">
+            <h1>Luthfi Kamal</h1>
+            <p>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz</p>
+        </div>
+    </header>
+
+    <div class="wrapper lavender">
+        <div class="left">
+            <div class="container bg-white shadow" id="first">
+                <h2 class="container-header text-center">TAMBAHKAN BUKU</h2>
+                <form class="form" action="#" id="form">
+                    <div class="left-form">
+                        <div class="form-group form-title">
+                            <label for="title">Judul</label>
+                            <input type="text" id="title" name="title" placeholder="Masukkan judul buku..." required
+                                autocomplete="off">
+                        </div>
+                        <div class="form-group form-title">
+                            <label for="writer">Penulis</label>
+                            <input type="text" id="writer" name="writer" placeholder="Masukkan penulis buku..." required
+                                autocomplete="off">
+                        </div>
+                        <div class="form-group form-title">
+                            <label for="year">Tahun</label>
+                            <input type="number" id="year" name="year" required placeholder="Masukkan tahun buku..."
+                                autocomplete="off">
+                        </div>
+                    </div>
+
+                    <div class="right-form">
+                        <div class="form-group form-title">
+                            <label for="category">Kategori</label>
+                            <select id="category" required>
+                                <option value="Pendidikan">Pendidikan</option>
+                                <option value="Fiksi">Fiksi</option>
+                                <option value="Novel">Novel</option>
+                            </select>
+                        </div>
+                        <div class="form-group form-title">
+                            <label for="keterangan">Keterangan</label>
+                            <select id="keterangan" required>
+                                <option value=false>Belum Dibaca</option>
+                                <option value=true>Sudah Dibaca</option>
+                            </select>
+                        </div>
+                        <input type="submit" value="MASUKKAN BUKU" name="Submit" class="btn-submit double">
+                    </div>
+                </form>
+            </div>
+
+            <div class="container bg-white shadow" id="second">
+                <h2 class="container-header text-center">PENCARIAN BUKU</h2>
+                <form class="form-search" action="#" id="form-search">
+                    <div class="form-group form-title">
+                        <label for="search">Cari Judul</label>
+                        <div class="searchbar">
+                            <input type="text" id="search" name="search" placeholder="Masukkan judul buku anda..."
+                                required autocomplete="off" autocomplete="off">
+                            <div class="search-magnifier"></div>
+                        </div>
+                        <div class="form-group button"> <input type="submit" value="CARI BUKU" name="Submit"
+                                class="btn-submit" id="btn-search"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="container lavender" id="unread">
+                <h2 class="container-header lavender">Yang Sedang Dibaca </h2>
+                <div class="list-item lavender" id="todos">
+                </div>
+            </div>
+            <div class="container" id="read">
+                <h2 class="container-header lavender">Sudah Dibaca &#10003;</h2>
+                <div class="list-item lavender" id="completed-todos">
+                </div>
+            </div>
+            <div class="container lavender" id="searched" hidden>
+                <h2 class="container-header lavender">Buku yang anda cari</h2>
+                <div class="list-item lavender" id="searched-todos">
+                </div>
+                <div class="form-group button"> <button type="button" name="Submit" class="btn-submit"
+                        id="btn-renderAll">
+                        TAMPILKAN SEMUA BUKU</button></div>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <p>Luthfi Kamal Ananda (f007x0032) - 2022 &copy Copyright Dicoding Indonesia</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
